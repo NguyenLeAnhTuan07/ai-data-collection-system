@@ -1,0 +1,16 @@
+After activating the virtual environment (venv)
+and installing all required libraries from requirements.txt,
+the next step is to install Tesseract OCR on your operating system.
+It is important to note that pytesseract is only a Python wrapper;
+the actual OCR engine is Tesseract itself.
+
+https://github.com/UB-Mannheim/tesseract/wiki
+
+After installation, update the Tesseract executable path in the code, for example:
+
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
+This path must correctly point to the tesseract.exe file on your system.
+If the path is incorrect, the program will raise an error indicating that Tesseract cannot be found.
+
+Once these steps are completed, the OCR system will function properly.

@@ -1,0 +1,12 @@
+After activating the virtual environment (venv)
+and installing all required libraries from requirements.txt,
+the next step is to install the Playwright browsers
+Run the following command:
+
+playwright install
+
+This command downloads the browser engines (Chromium, Firefox, WebKit)
+required by Playwright to perform web crawling. Without this step,
+the program will fail because no browser engine is available.
+
+Once these steps are completed, the crawling system will function properly.
